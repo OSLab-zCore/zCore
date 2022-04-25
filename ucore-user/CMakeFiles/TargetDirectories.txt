@@ -1,0 +1,10 @@
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/coretest.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/forktest_simple.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/hello.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/forktest.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/ulib.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/read_after_write1.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/kernel_intr_test.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/prepare.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/test_ls.dir
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/read_after_write0.dir

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/src/arch/riscv/arch.h
+
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/src/arch/riscv/initcode.S
+arch.h
+/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/src/arch/riscv/arch.h
+

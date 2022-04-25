@@ -1,0 +1,1 @@
+riscv64-linux-musl-gcc  -mcmodel=medany -fno-builtin -nostdinc -fno-stack-protector -ggdb -Wall  -nostdlib  CMakeFiles/coretest.dir/src/coretest.c.o  -o riscv64/coretest  libulib.a 
