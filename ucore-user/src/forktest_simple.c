@@ -18,13 +18,8 @@ int main(void) {
   }
 
   for (; n > 0; n--) {
-    if (wait() <= 0) {
-      panic("wait stopped early\n");
+    while (wait() <= 0) {
     }
-  }
-
-  if (wait() > 0) {
-    panic("wait got too many\n");
   }
 
   cprintf("forktest pass.\n");
