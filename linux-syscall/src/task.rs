@@ -211,7 +211,8 @@ impl Syscall<'_> {
             _ => unimplemented!(),
         };
         let flags = WaitFlags::from_bits_truncate(options);
-        let nohang = flags.contains(WaitFlags::NOHANG);
+        // let nohang = flags.contains(WaitFlags::NOHANG);
+        let nohang = false;
         info!(
             "wait4: target={:?}, wstatus={:?}, options={:?}",
             target, wstatus, flags,
