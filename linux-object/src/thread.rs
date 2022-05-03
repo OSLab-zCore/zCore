@@ -6,7 +6,6 @@ use crate::signal::{Signal, SignalStack, SignalUserContext, Sigset};
 use alloc::sync::Arc;
 use kernel_hal::context::{UserContext, UserContextField};
 use kernel_hal::user::{Out, UserInPtr, UserOutPtr, UserPtr};
-#[cfg(target_os = "none")]
 use kernel_hal::vm::PagingError;
 use kernel_hal::MMUFlags;
 use spin::{Mutex, MutexGuard};
