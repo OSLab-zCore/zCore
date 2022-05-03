@@ -107,6 +107,7 @@ impl Syscall<'_> {
     /// Allows the calling thread to sleep for
     /// an interval specified with nanosecond precision
     pub async fn sys_nanosleep(&self, req: UserInPtr<TimeSpec>) -> SysResult {
+        // TODO: fix sleep duration
         info!("nanosleep: deadline={:?}", req);
         let duration = req.read()?.into();
         nanosleep(duration).await;
