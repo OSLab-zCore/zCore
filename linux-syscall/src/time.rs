@@ -84,21 +84,41 @@ impl Syscall<'_> {
     }
 
     /// stores the current process times in the struct tms that buf points to
-    pub fn sys_times(&mut self, mut buf: UserOutPtr<Tms>) -> SysResult {
-        info!("times: buf: {:?}", buf);
+    // pub fn sys_times(&mut self, mut buf: UserOutPtr<Tms>) -> SysResult {
+    //     info!("times: buf: {:?}", buf);
+
+    //     let tv = TimeVal::now();
+
+    //     let tick = (tv.sec * 1_000_000 + tv.usec) / USEC_PER_TICK;
+
+    //     let new_buf = Tms {
+    //         tms_utime: 0,
+    //         tms_stime: 0,
+    //         tms_cutime: 0,
+    //         tms_cstime: 0,
+    //     };
+
+    //     buf.write(new_buf)?;
+
+    //     info!("tick: {:?}", tick);
+    //     Ok(tick as usize)
+    // }
+
+    pub fn sys_times(&mut self) -> SysResult {
+        // info!("times: buf: {:?}", buf);
 
         let tv = TimeVal::now();
 
         let tick = (tv.sec * 1_000_000 + tv.usec) / USEC_PER_TICK;
 
-        let new_buf = Tms {
-            tms_utime: 0,
-            tms_stime: 0,
-            tms_cutime: 0,
-            tms_cstime: 0,
-        };
+        // let new_buf = Tms {
+        //     tms_utime: 0,
+        //     tms_stime: 0,
+        //     tms_cutime: 0,
+        //     tms_cstime: 0,
+        // };
 
-        buf.write(new_buf)?;
+        // buf.write(new_buf)?;
 
         info!("tick: {:?}", tick);
         Ok(tick as usize)

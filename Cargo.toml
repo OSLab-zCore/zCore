@@ -17,3 +17,6 @@ exclude = [
 
 [profile.release]
 lto = true
+
+# [patch.'https://github.com/OSLab-zCore/PreemptiveScheduler']
+# executor = { path = "../PreemptiveScheduler" }
