@@ -2,6 +2,7 @@
 
 use alloc::sync::Arc;
 use core::time::Duration;
+use kernel_hal::timer;
 use rcore_fs::vfs::*;
 
 /// TimeSpec struct for clock_gettime, similar to Timespec
