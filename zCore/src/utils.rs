@@ -62,6 +62,7 @@ pub fn boot_options() -> BootOptions {
                 log_level: options.get("LOG").unwrap_or(&"").to_string(),
                 #[cfg(feature = "linux")]
                 root_proc: options.get("ROOTPROC").unwrap_or(&"/bin/busybox?sh").to_string(),
+                // root_proc: options.get("ROOTPROC").unwrap_or(&"/coretest/coretest").to_string(),
             }
         }
     }

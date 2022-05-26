@@ -16,5 +16,5 @@ exclude = ["zircon-user", "rboot"]
 [profile.release]
 lto = true
 
-[patch.'https://github.com/OSLab-zCore/PreemptiveScheduler']
+[patch.'https://github.com/DeathWish5/PreemptiveScheduler']
 executor = { path = "../PreemptiveScheduler" }
