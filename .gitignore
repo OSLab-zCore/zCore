@@ -12,7 +12,9 @@ Cargo.lock
 
 /ignored
 /rootfs
+/riscv_rootfs
 zCore/src/platform/riscv/kernel-vars.ld
 
 .DS_Store
 __pycache__
+/ucore-user/CMakeFiles/*

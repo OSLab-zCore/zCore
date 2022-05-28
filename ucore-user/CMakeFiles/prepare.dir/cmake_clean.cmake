@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/prepare.dir/src/prepare.c.o"
-  "riscv64/prepare.pdb"
+  "CMakeFiles/prepare.dir/src/prepare.c.o.d"
   "riscv64/prepare"
+  "riscv64/prepare.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

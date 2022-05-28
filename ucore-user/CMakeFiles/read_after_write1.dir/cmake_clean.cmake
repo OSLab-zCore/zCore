@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/read_after_write1.dir/src/read_after_write1.c.o"
-  "riscv64/read_after_write1.pdb"
+  "CMakeFiles/read_after_write1.dir/src/read_after_write1.c.o.d"
   "riscv64/read_after_write1"
+  "riscv64/read_after_write1.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/src/arch/riscv/arch.h
+/Users/zichunyu/Desktop/CODE/OS/zCore/ucore-user/src/arch/riscv/arch.h
 
-/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/src/arch/riscv/initcode.S
+/Users/zichunyu/Desktop/CODE/OS/zCore/ucore-user/src/arch/riscv/initcode.S
 arch.h
-/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/src/arch/riscv/arch.h
+/Users/zichunyu/Desktop/CODE/OS/zCore/ucore-user/src/arch/riscv/arch.h
 

@@ -40,6 +40,17 @@ check:
 
 # NOT ON MASTER!
 
+RISCV64_ROOTFS_TAR := prebuild.tar.xz
+RISCV64_ROOTFS_URL := https://github.com/rcore-os/libc-test-prebuilt/releases/download/0.1/$(RISCV64_ROOTFS_TAR)
+
+prebuilt/linux/riscv64/$(RISCV64_ROOTFS_TAR):
+	@wget $(RISCV64_ROOTFS_URL) -O $@
+
+riscv-rootfs:prebuilt/linux/riscv64/$(RISCV64_ROOTFS_TAR)
+	@rm -rf riscv_rootfs && mkdir -p riscv_rootfs
+	@tar -xvf $< -C riscv_rootfs --strip-components 1
+	@ln -s busybox riscv_rootfs/bin/ls
+
 riscv-image:
 	@echo building riscv.img
 	@rcore-fs-fuse zCore/riscv64.img riscv_rootfs zip

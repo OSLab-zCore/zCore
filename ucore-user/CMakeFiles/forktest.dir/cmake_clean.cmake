@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/forktest.dir/src/forktest.c.o"
-  "riscv64/forktest.pdb"
+  "CMakeFiles/forktest.dir/src/forktest.c.o.d"
   "riscv64/forktest"
+  "riscv64/forktest.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

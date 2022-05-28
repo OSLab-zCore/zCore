@@ -1,1 +1,1 @@
-riscv64-linux-musl-gcc  -mcmodel=medany -fno-builtin -nostdinc -fno-stack-protector -ggdb -Wall  -nostdlib  CMakeFiles/read_after_write0.dir/src/read_after_write0.c.o  -o riscv64/read_after_write0  libulib.a 
+riscv64-linux-musl-gcc -mcmodel=medany -fno-builtin -nostdinc -fno-stack-protector -ggdb -Wall -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk  -nostdlib CMakeFiles/read_after_write0.dir/src/read_after_write0.c.o -o riscv64/read_after_write0  libulib.a 

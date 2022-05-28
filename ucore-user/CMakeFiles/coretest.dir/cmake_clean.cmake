@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/coretest.dir/src/coretest.c.o"
-  "riscv64/coretest.pdb"
+  "CMakeFiles/coretest.dir/src/coretest.c.o.d"
   "riscv64/coretest"
+  "riscv64/coretest.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

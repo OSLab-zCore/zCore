@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/kernel_intr_test.dir/src/kernel_intr_test.c.o"
-  "riscv64/kernel_intr_test.pdb"
+  "CMakeFiles/kernel_intr_test.dir/src/kernel_intr_test.c.o.d"
   "riscv64/kernel_intr_test"
+  "riscv64/kernel_intr_test.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

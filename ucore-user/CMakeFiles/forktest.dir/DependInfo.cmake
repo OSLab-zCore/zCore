@@ -1,20 +1,20 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/src/forktest.c" "/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/forktest.dir/src/forktest.c.o"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  "src/include"
-  "src/arch/riscv"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/zichunyu/Desktop/CODE/OS/zCore/ucore-user/src/forktest.c" "CMakeFiles/forktest.dir/src/forktest.c.o" "gcc" "CMakeFiles/forktest.dir/src/forktest.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/data/private/yuzc/OS/riscv64-linux-musl-cross/ucore/CMakeFiles/ulib.dir/DependInfo.cmake"
+  "/Users/zichunyu/Desktop/CODE/OS/zCore/ucore-user/CMakeFiles/ulib.dir/DependInfo.cmake"
   )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

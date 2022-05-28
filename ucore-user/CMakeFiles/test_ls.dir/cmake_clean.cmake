@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_ls.dir/src/test_ls.c.o"
-  "riscv64/test_ls.pdb"
+  "CMakeFiles/test_ls.dir/src/test_ls.c.o.d"
   "riscv64/test_ls"
+  "riscv64/test_ls.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
