@@ -2,7 +2,9 @@ use super::*;
 use core::fmt::Debug;
 use core::mem::size_of;
 
+use alloc::string::String;
 use alloc::string::ToString;
+use alloc::vec::Vec;
 use bitflags::bitflags;
 
 use kernel_hal::context::UserContextField;
@@ -256,7 +258,10 @@ impl Syscall<'_> {
     ) -> SysResult {
         let path = path.as_c_str()?;
         let args = argv.read_cstring_array()?;
-        let envs = envp.read_cstring_array()?;
+        let mut envs: Vec<String> = Vec::new();
+        if !envp.is_null() {
+            envs = envp.read_cstring_array()?;
+        }
         info!(
             "execve: path: {:?}, argv: {:?}, envs: {:?}",
             path, argv, envs
