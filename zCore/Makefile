@@ -157,7 +157,7 @@ else ifeq ($(ARCH), riscv64)
   qemu_opts += \
 		-machine virt \
 		-bios default \
-		-m 512M \
+		-m 1G \
 		-no-reboot \
 		-serial mon:stdio \
 		-serial file:/tmp/serial.out \
