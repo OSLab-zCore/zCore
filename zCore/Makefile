@@ -15,7 +15,7 @@ V ?=
 USER ?=
 ZBI ?= bringup
 
-SMP ?= 1
+SMP ?= 4
 ACCEL ?=
 
 NET ?=
